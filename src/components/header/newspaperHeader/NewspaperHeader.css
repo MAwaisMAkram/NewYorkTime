@@ -1,0 +1,42 @@
+div {
+    display: flex;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid gray;
+}
+  
+.left-section {
+    display: inline-block;
+    width: 70%;
+}
+  
+.date {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 11px;
+}
+  
+.todays-paper-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 11px;
+}
+  
+.center-section {
+    flex-grow: 1;
+}
+  
+.title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+  

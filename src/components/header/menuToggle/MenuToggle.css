@@ -1,0 +1,26 @@
+div {
+    display: flex;
+}
+div > button {
+    display: inline-block;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    align-content: space-between;
+    box-sizing: border-box;
+}
+
+.menu-icon, .search-icon{
+    width: 20px;
+    height: 18px;
+}
+
+.search-button {
+    margin-left: 10px;
+  }
+
+button:hover {
+    background-color: white;
+}
