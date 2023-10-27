@@ -4,32 +4,23 @@ import "./stories.css"
 import myImage from "../../Assests/Heritage.webp";
 
 
+
+
 function Stories() {
+    // Format the date as "Day, Month Date, Year"
     const currentDate = new Date();
-  
     const options = {
         day: 'numeric',
         month: 'long',
         year: 'numeric',
       };
-  // Format the date as "Day, Month Date, Year"
-  const formattedDate = currentDate.toLocaleDateString('en-US', options);
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
   return (
     <stories>
         <div className="heading">
             <h1>Top Stories</h1>
         </div>
-        {/* <div className="image-layout">
-            <div className="left-side">
-                <a href="#" className="full-height-link">
-                    <img
-                        src="../../Assests/Nadine Ijewere.png" 
-                        alt="Left side"
-                        className="full-height-image"
-                    />
-                </a>
-            </div>
-        </div> */}
 
         <div className="flex-container">
             <div className="left-container">
@@ -49,7 +40,7 @@ function Stories() {
             </div>
             <div className="right-container">
                 <div className="image-row">
-                    <div  className="image-column">
+                    <div className="image-column">
                         <a href="/" className="image-link">
                             <img
                                 src={myImage}
@@ -65,19 +56,16 @@ function Stories() {
                             />
                         </a>
 
-                        {/* <div className="image-content">
-                            <h3>Image</h3>
-                            <p>Additional content for image.</p>
-                        </div> */}
                     </div>
                 </div>
                 <div className="image-row">
-                    <div  className="image-column">
+                    <div className="image-column">
                         <a href="/" className="image-link">
                             <img
                                 src={myImage}
                                 alt=""
                                 className="height-image"
+                                
                             />
                         </a>
                         <a href="/" className="image-link">
@@ -94,7 +82,29 @@ function Stories() {
                         </div> */}
                     </div>
                 </div>
+                {/* <div className="image-row">
+                    <div className="image-column">
+                        <a href="/" className="image-link">
+                            <img
+                                src={myImage}
+                                alt=""
+                                className="height-image"
+                            />
+                        </a>
+                        <a href="/" className="image-link">
+                            <img
+                                src={myImage}
+                                alt=""
+                                className="height-image"
+                            />
+                        </a>
 
+                        <div className="image-content">
+                            <h3>Image</h3>
+                            <p>Additional content for image.</p>
+                        </div>
+                    </div>
+                </div> */}
             </div>
         </div>
     </stories>

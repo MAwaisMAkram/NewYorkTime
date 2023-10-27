@@ -13,7 +13,7 @@ div {
   
 .left-section {
     display: inline-block;
-    width: 70%;
+    width: 50%;
 }
   
 .date {
@@ -32,11 +32,8 @@ div {
     flex-grow: 1;
 }
   
-.title {
-    font-family: 'Times New Roman';
-    font-weight: 400;
+.title > img {
     margin: 0;
-    font-size: 24px;
-    color: #333;
+    width: 60%;
 }
   

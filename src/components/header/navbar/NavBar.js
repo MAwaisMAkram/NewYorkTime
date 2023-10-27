@@ -24,11 +24,6 @@ const NavBar = () => {
         <a href="#">Wirecutter</a>
         <a href="#">TheAthletic</a>
       </div>
-      <div className="navbar-toggle" onClick={toggleNavbar}>
-        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-        <span className={`bar ${isOpen ? 'open' : ''}`}></span>
-      </div>
     </nav>
   );
 };
